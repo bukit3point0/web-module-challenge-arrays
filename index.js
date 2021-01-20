@@ -46,7 +46,7 @@ Use the copy function below to do the following:
 */
 
 function copy(originalFlavors){
-    return originalFlavors;
+    return [...originalFlavors];
 }    
 
 
@@ -196,14 +196,14 @@ Use the getAverageWordLength function below to do the following:
     For example: getAverageWordLength(originalFlavors) should return a number between 0 and 3.     
 */
 
-// function getAverageWordLength(originalFlavors, numberOfWords){
-//     const wordsInFlavor = [];
-//     for (let i=0; i<originalFlavors.length; i++) {
-//         let flavorWords = (originalFlavors[i].count(" ") + 1);
-//         wordsInFlavor.push(flavorWords);
-//     }
-//     return wordsInFlavor;
-// }
+function getAverageWordLength(originalFlavors, numberOfWords){
+    const wordsInFlavor = [];
+    for (let i=0; i<originalFlavors.length; i++) {
+        let flavorWords = (originalFlavors[i].count(" ") + 1);
+        wordsInFlavor.push(flavorWords);
+    }
+    return wordsInFlavor;
+}
 
 
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪
